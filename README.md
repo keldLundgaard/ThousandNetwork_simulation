@@ -7,8 +7,8 @@ Download the ipython notebook to see how to use the simulation code.
 Dependencies:
 - python 2.7
 - numpy
-- matplotlib 
- - igraph (brew install igraph)
- - python-igraph (pip install python-igraph)
+- matplotlib
+- igraph (brew install igraph)
+- python-igraph (pip install python-igraph)
 
 
