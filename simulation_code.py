@@ -287,7 +287,6 @@ def run_simulation(config, g_initialize=None):
         print 'end    ',
         print 'members', len(g.vs),
         print 'avg_age: %.1f' % np.mean(g.vs['age'])
-        print ' -- stopping simulations -- '
 
     # saving last iteration
     if config.get('save_states', 1):
