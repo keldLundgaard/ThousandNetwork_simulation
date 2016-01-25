@@ -216,11 +216,9 @@ def local_event(g, config):
 
 
 def get_connectivity(g):
-
     g.delete_vertices(
         [i for i, degree in enumerate(g.degree()) if degree == 0])
 
-    # print g.degree()
     shortest_paths = g.shortest_paths_dijkstra(mode='all')
 
     return np.mean(shortest_paths)
