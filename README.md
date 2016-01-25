@@ -12,3 +12,4 @@ Dependencies:
 - python-igraph (pip install python-igraph)
 
 
+Distributed under the MIT license
