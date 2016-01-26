@@ -218,9 +218,10 @@ def get_visual_style(g):
 def plot_graph(
         g,
         filename=None,
+        layout=None,
         fruchterman=0,
-        delete_zero_connections=1):
-    # styling
+        delete_zero_connections=1,
+        visual_styling={}):
 
     if delete_zero_connections:
         g.delete_vertices(
@@ -228,7 +229,15 @@ def plot_graph(
 
     g, visual_style = get_visual_style(g)
 
-    if fruchterman:
+    visual_style.update(visual_styling)
+    if layout:
+        ig.plot(
+            g,
+            filename,
+            layout=layout,
+            **visual_style)
+
+    elif fruchterman:
         ig.plot(
             g,
             filename,
