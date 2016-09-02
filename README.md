@@ -1,6 +1,6 @@
 # Thousand Network simulation
 
-A small project that I did for my application to Thousand Network in January 2016. See the an HTML version of the notebook [here][1].
+A small project that I did for my application to Thousand Network in January 2016. Check it out [here][1].
 
 ## Dependencies
 - python 2.7
